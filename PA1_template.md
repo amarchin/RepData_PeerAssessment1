@@ -143,7 +143,7 @@ The histogram of the total number of steps taken each day is slightly different 
 ## [1] 10766.19
 ```
 
-This the histogram with a blue line indicating the mean and the median.
+This is the histogram with a blue line indicating the mean and the median.
 
 
 ```r

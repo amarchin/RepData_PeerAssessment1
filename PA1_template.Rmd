@@ -94,7 +94,7 @@ The histogram of the total number of steps taken each day is slightly different 
     mean_steps_day_narm
 ```
 
-This the histogram with a blue line indicating the mean and the median.
+This is the histogram with a blue line indicating the mean and the median.
 
 ```{r, echo=TRUE}
     hist(tot_steps_day_narm, breaks = 20, col = "wheat", xlab = " Number of steps",
