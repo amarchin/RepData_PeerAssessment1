@@ -43,7 +43,7 @@ With the following code it is possible to calculate the mean and median for the 
 
 Below you can find the histogram with a blue line indicating the mean (the median is not shown because it would be indistinguishable from the mean).
 
-```{r, echo=TRUE, highlight=FALSE}
+```{r, echo=TRUE, fig.height=4}
     hist(tot_steps_day, breaks = 20, col = "wheat", xlab = " Number of steps",
          main = "Total number of steps taken each day")
     abline(v = mean_steps_day, col = "blue", lwd = 3)
@@ -53,7 +53,7 @@ What is the average daily activity pattern?
 ------
 In order to study the average daily pattern one can make a time series plot of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis).
 
-```{r, echo=TRUE}
+```{r, echo=TRUE, fig.height=4}
     mean_steps_int <- tapply(activity$steps, activity$interval, mean, na.rm = T)
     plot(names(mean_steps_int), mean_steps_int, type = "l", xlab = "Time [min]",
          ylab = "Number of steps", main = "Time series for average daily activity pattern")
@@ -96,7 +96,7 @@ The histogram of the total number of steps taken each day is slightly different 
 
 This the histogram with a blue line indicating the mean and the median.
 
-```{r, echo=TRUE}
+```{r, echo=TRUE, fig.height=4}
     hist(tot_steps_day_narm, breaks = 20, col = "wheat", xlab = " Number of steps",
          main = "Total number of steps taken each day", ylim = c(0,20))
     abline(v = mean_steps_day_narm, col = "blue", lwd = 3)
@@ -114,7 +114,7 @@ A new factor variable with two levels – “Weekday” and “Weekend” indica
 
 This a panel plot containing a time series plot of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis).
 
-```{r, echo=TRUE}
+```{r, echo=TRUE, fig.height=4}
     library(plyr)
     library(lattice)
     mean_steps_weekdays <- ddply(activityNArm, .(interval, weekday), summarize,
