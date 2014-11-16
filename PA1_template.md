@@ -13,7 +13,7 @@ This assignment makes use of data from a personal activity monitoring device. Th
 
 Data
 ----
-The data for this assignment are stored in the repdata-data-activity.zip file. They can be loaded in this way:
+The data for this assignment are stored in the activity.zip file. They can be loaded in this way:
 
 ```r
     activity <- read.csv(unz("activity.zip", "activity.csv"))
