@@ -121,7 +121,7 @@ All the missing values have been substituted using the mean for that day. A new 
     }
 ```
 
-The histogram of the total number of steps taken each day is slightly different respect to the pervious one (for instance the frequency of the mean value is now larger). Moreover the mean and median in this case are exactly the same.
+The histogram of the total number of steps taken each day is slightly different respect to the previous one (for instance the frequency of the mean value is now larger). Moreover the mean and median in this case are exactly the same.
 
 
 ```r

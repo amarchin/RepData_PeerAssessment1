@@ -299,7 +299,7 @@ NA</code>)</p></li>
     }
 </code></pre>
 
-<p>The histogram of the total number of steps taken each day is slightly different respect to the pervious one (for instance the frequency of the mean value is now larger). Moreover the mean and median in this case are exactly the same.</p>
+<p>The histogram of the total number of steps taken each day is slightly different respect to the previous one (for instance the frequency of the mean value is now larger). Moreover the mean and median in this case are exactly the same.</p>
 
 <pre><code class="r">    tot_steps_day_narm&lt;-tapply(activityNArm$steps, activityNArm$date, sum)
     median_steps_day_narm &lt;- median(tot_steps_day_narm)
