@@ -33,7 +33,7 @@ What is mean total number of steps taken per day?
 -----
 With the following code it is possible to calculate the mean and median for the total number of steps taken per day. The first number is the median and the second is the mean
 
-```{r}
+```{r, echo=TRUE}
     tot_steps_day <- tapply(activity$steps, activity$date, sum)
     median_steps_day <- median(tot_steps_day, na.rm = T)
     median_steps_day
@@ -43,7 +43,7 @@ With the following code it is possible to calculate the mean and median for the 
 
 Below you can find the histogram with a blue line indicating the mean (the median is not shown because it would be indistinguishable from the mean).
 
-```{r, echo=TRUE}
+```{r, echo=TRUE, highlight=FALSE}
     hist(tot_steps_day, breaks = 20, col = "wheat", xlab = " Number of steps",
          main = "Total number of steps taken each day")
     abline(v = mean_steps_day, col = "blue", lwd = 3)
